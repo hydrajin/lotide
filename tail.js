@@ -10,7 +10,7 @@ const assertEqual = function(actual, expected) {
 const tail = function(input) {
   let output = []; // we take a variable output (an empty array)x
   for (let i = 1; i < input.length; i++) { // for loop starts at index 1 (skips head)
-    output.push(input[i]); // output.push(input[i]) pushes all elements after head after array
+    output.push(input[i]); // output.push(input[i]) pushes all elements after head array
   }
   return output;
 };
