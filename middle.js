@@ -22,8 +22,8 @@ const middle = function (array) {
   let middleElementIndex = "";
   let middleElement = "";
   //console.log(array[i]);
-  if (array.length === 2 || array.length === 1) {
-    return [];
+  if (array.length < 3) {
+    return midArr;
   }
   if (array.length % 2 === 0) { // if EVEN (we need 2 elements)
     // midArr.push(array[array.length / 2 - 1]); // Push first middle element
