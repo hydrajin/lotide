@@ -1,0 +1,1 @@
+const words = ["my", "name", "is", "Suliman", "Fayyaz"];
