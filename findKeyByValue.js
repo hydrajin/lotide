@@ -1,3 +1,5 @@
+const findKey = require("./findKey");
+
 // FUNCTION IMPLEMENTATION
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
@@ -16,8 +18,8 @@ const findKeyByValue = (object, value) => {
   // console.log(keys); //returns array of keys
   for (let key of keys) { // need to iterate to get string of array
     //console.log(key); // keys returned as string
-    // console.log(value)
-    if (object[key] === value) {
+    // console.log(value) // returns value of to compare
+    if (object[key] === value) { // check if object value is equal to callback value
       return key;
     }
   }
@@ -32,3 +34,5 @@ const bestTVShowsByGenre = {
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sci_fi");
+
+module.exports = findKeyByValue;

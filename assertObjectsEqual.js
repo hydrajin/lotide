@@ -47,3 +47,5 @@ const def = { d: "3", e: "4", f: "5"};
 assertObjectsEqual(ab, ba); // PASS
 assertObjectsEqual(abc, def); // FAIL
 
+module.exports = assertObjectsEqual;
+

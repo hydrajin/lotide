@@ -9,4 +9,3 @@ const reverse = function(string) {
 };
 
 console.log(reverse(`${input} `)); // Takes the input from terminal and then passes it through the reverse function
-

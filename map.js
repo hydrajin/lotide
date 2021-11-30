@@ -38,3 +38,5 @@ console.log(results1); // [ 'm', 'n', 'i', 'S', 'F' ]
 // ONLY zero index of words array
 
 console.log(assertArraysEqual(results1, [ 'm', 'n', 'i', 'S', 'F' ])); // [ 'm', 'n', 'i', 'S', 'F' ]
+
+module.exports = map;

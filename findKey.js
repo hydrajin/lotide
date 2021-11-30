@@ -44,3 +44,5 @@ let assCheck1 = findKey({
 }, x => x.stars === 5); // ??
 
 assertEqual(assCheck1, undefined); // NOT WORKING!!!
+
+module.exports = findKey;

@@ -47,3 +47,5 @@ const results2 = takeUntil(data2, x => x === ','); // [ 'I\'ve', 'been', 'to', '
 console.log(assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]));
 // GETTING UNDEFINED AFTER TEST ASSERTION
 // console.log(results2);
+
+module.exports = takeUntil;
