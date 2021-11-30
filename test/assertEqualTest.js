@@ -7,3 +7,4 @@ assertEqual("1", 1);
 assertEqual("Hydrajin", "Hydrajin");
 assertEqual("Hydrajin", "hydrajin");
 assertEqual(27, 98);
+
