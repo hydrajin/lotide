@@ -1,17 +1,23 @@
-const assertArraysEqual = require('../assertArraysEqual.js');
+const assert = require('chai').assert;
 const middle = require('../middle');
 
-// TEST CODE
-
-// ARRAY WITH 1 or 2 ELEMENTS
-assertArraysEqual(middle([1]), []); // => []
-assertArraysEqual(middle([1, 2]), []); // => []
-
-// ARRAY WITH AN ODD NUMBER of ELEMENTS
-assertArraysEqual(middle([1, 2, 3]), [2]); // => [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
-
-//  ARRAY WITH AN EVEN NUMBER of ELEMENTS
-
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]
+describe("#middle", () => {
+  it("returns [] or emptry array for [1] or an array with 1 element", () => {
+    assert.deepEqual(middle([1]), []);
+  });
+  it("returns [] or emptry array for [1,2] or an array with 2 elements", () => {
+    assert.deepEqual(middle([1, 2]), []);
+  });
+  it("returns [2] for [1,2,3] or an array with an ODD number of elements", () => {
+    assert.deepEqual(middle([1, 2, 3]), [2]);
+  });
+  it("returns [2] for [1,2,3,4,5] or array with an ODD number of elements", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5]), [3]);
+  });
+  it("returns [2,3] for [1,2,3,4] or array with an EVEN number of elements", () => {
+    assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
+  });
+  it("returns [3,4] for [1,2,3,4,5,6] or array with an EVEN number of elements", () => {
+    assert.deepEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
+  });
+});
