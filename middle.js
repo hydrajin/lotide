@@ -1,20 +1,5 @@
-// TEST/ASSERTION FUNCTIONS
-const assertArraysEqual = (arr1, arr2) => {
-  console.log(eqArrays(arr1, arr2) === true ? `✅🟢✅ Assertion Passed: [${arr1}] === [${arr2}]` : `🛑🔴🛑 Assertion Failed: [${arr1}] !== [${arr2}]`);
-};
-
-// TEST/ASSERTION FUNCTIONS
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+// ADD REQUIRE (ASSERTARRAYSEQUAL)
+const assertArraysEqual = require('./assertArraysEqual.js');
 
 // ACTUAL FUNCTION
 const middle = function (array) {
@@ -44,17 +29,5 @@ const middle = function (array) {
   return midArr;
 };
 
-// TEST CODE
-
-// ARRAY WITH 1 or 2 ELEMENTS
-assertArraysEqual(middle([1]), []); // => []
-assertArraysEqual(middle([1, 2]), []); // => []
-
-// ARRAY WITH AN ODD NUMBER of ELEMENTS
-assertArraysEqual(middle([1, 2, 3]), [2]); // => [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
-
-//  ARRAY WITH AN EVEN NUMBER of ELEMENTS
-
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]
+//EXPORT
+module.exports = middle; // No need for .js extension
