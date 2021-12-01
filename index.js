@@ -1,4 +1,4 @@
-// REQUIRED 
+// REQUIRED
 
 const head = require('./head');
 const tail = require('./tail');
@@ -17,19 +17,19 @@ const map = require('./map');
 
 // EXPORT
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  assertEqual: assertEqual,
-  assertArraysEqual: assertArraysEqual,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  assertObjectsEquals: assertObjectsEqual,
-  takeUntil: takeUntil,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  letterPositions: letterPositions,
-  without: without,
+  head,
+  tail,
+  middle,
+  assertEqual,
+  assertArraysEqual,
+  countLetters,
+  countOnly,
+  assertObjectsEqual,
+  takeUntil,
+  findKey,
+  findKeyByValue,
+  letterPositions,
+  without,
   map, // ES6 Property value shorthand (If you want to define an object who's keys have the sam enam as the variables passed-in as properties)
   // You can use the shorthand and simpl pass the key name (map, instead of map: map)
 };
