@@ -1,4 +1,4 @@
-// index.js
+// REQUIRED 
 
 const head = require('./head');
 const tail = require('./tail');
@@ -13,9 +13,9 @@ const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
 const letterPositions = require('./letterPositions');
 const without = require('./without');
-const map = require('./map')
+const map = require('./map');
 
-
+// EXPORT
 module.exports = {
   head: head,
   tail: tail,
@@ -30,5 +30,6 @@ module.exports = {
   findKeyByValue: findKeyByValue,
   letterPositions: letterPositions,
   without: without,
-  map: map
+  map, // ES6 Property value shorthand (If you want to define an object who's keys have the sam enam as the variables passed-in as properties)
+  // You can use the shorthand and simpl pass the key name (map, instead of map: map)
 };
